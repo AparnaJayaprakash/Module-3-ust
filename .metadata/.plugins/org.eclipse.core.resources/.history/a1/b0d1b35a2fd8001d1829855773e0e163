@@ -1,0 +1,15 @@
+package com.ust.iocautowiring;
+
+public class A {
+	
+	B b ;
+	public A(B b) {
+		this.b = b;
+		System.out.println("from A() constructor.....");
+	}
+	
+	public void message() {
+		System.out.println("from message().....");
+	}
+
+}

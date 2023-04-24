@@ -1,0 +1,58 @@
+package com.ust.ioc;
+
+
+
+public class DbConnection implements Connection {             //should have single responsibility
+	
+	private String url;
+	private String dbUserName;
+	private String dbPassword;
+	
+	
+	
+	public String getUrl() {
+		return url;
+	}
+
+
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+
+
+	public String getDbUserName() {
+		return dbUserName;
+	}
+
+
+
+	public void setDbUserName(String dbUserName) {
+		this.dbUserName = dbUserName;
+	}
+
+
+
+	public String getDbPassword() {
+		return dbPassword;
+	}
+
+
+
+	public void setDbPassword(String dbPassword) {
+		this.dbPassword = dbPassword;
+	}
+
+
+
+	public  Connection getConnection() {
+		
+		java.sql.Connection con = DriverManager.getConnection(url,dbUserName,dbPassword);
+		System.out.println("getConnection called...");
+		return new DbConnection();
+		
+	}
+
+}
+

@@ -1,0 +1,13 @@
+package com.ust.ioc;
+
+public class Connection {             //should have single responsibility
+	
+	public static Connection getConnection() {
+		
+		System.out.println("getConnection called...");
+		return new Connection();
+		
+	}
+
+}
+

@@ -1,0 +1,7 @@
+package com.ust.iocjavaconfig;
+
+public interface HelloWorld {
+	
+	public String message();
+
+}

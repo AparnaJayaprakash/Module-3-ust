@@ -1,0 +1,19 @@
+package com.ust.iocautowiring;
+
+public class B {
+	
+	A a;
+	public B() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public B(A a) {
+		System.out.println("from setA() constructor.....");
+	}
+	public void setA(A a) {
+		//byName byType will use setter injection
+		System.out.println("setA() called....");
+		this.a=a;
+	}
+
+}

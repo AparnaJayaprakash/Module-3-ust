@@ -1,0 +1,6 @@
+package com.ust.rest.services.interfaces;
+
+public interface ProductServiceIface {
+	
+
+}

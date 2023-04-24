@@ -1,0 +1,13 @@
+package com.ust.rest;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Firstrestmongojpa2Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Firstrestmongojpa2Application.class, args);
+	}
+
+}

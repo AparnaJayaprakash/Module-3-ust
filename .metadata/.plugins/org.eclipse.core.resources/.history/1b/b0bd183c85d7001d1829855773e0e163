@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        
+        <bean name="connection" class="com.ust.ioc.DbConnection">
+			<property name="url" value="jdbc:mysql://localhost:3306/xe"></property>
+			<property name="dbUserName" value="root"></property>
+			<property name="dbPassword" value="pass@word1"></property>
+			
+		</bean>
+		<bean name="Login" class="com.ust.ioc.Login">
+			<property name="db" ref="connection"></property>         <!-- properties is used for meeting the dependencies    => setter injection(we target the properties, the names of the properties should match)-->
+		</bean>
+		</beans>

@@ -1,0 +1,18 @@
+package com.ust.ioc;
+
+public class Login {
+	
+	private String userName;
+	private String password;
+	
+	public boolean validate() {
+		
+		//obtain connections to database and writes sql
+		//to verify username and passwords exist in database.
+		
+		Connection connection = new Connection();
+		
+		
+	}
+
+}

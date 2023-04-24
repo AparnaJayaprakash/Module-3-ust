@@ -1,0 +1,20 @@
+package com.ust.iocautowiring;
+
+public class B {
+	
+	A a;
+	B b;
+	
+	
+	public B(A a) {
+		this.a = a;
+		System.out.println("from B() constructor.....");
+	}
+	
+	public void setA(A a) {
+		//byName byType will use setter injection
+		System.out.println("setA() called....");
+		this.a=a;
+	}
+
+}

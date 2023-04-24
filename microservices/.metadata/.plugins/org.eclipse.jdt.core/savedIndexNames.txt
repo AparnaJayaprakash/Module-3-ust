@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+D:\Module 3 ust\microservices\.metadata\.plugins\org.eclipse.jdt.core
+3037686871.index
+1737297801.index
+1233430034.index
+2335470964.index
+2170374924.index
+1865797976.index
